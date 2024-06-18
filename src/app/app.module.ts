@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ModuloCompartido } from './shared/compartido.module';
+import { UserListComponent } from './user-list/user-list.component';
+import { FilterPipe } from './filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    UserListComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ModuloCompartido
+    ModuloCompartido,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
