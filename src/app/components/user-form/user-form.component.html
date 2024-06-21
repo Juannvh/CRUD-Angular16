@@ -1,0 +1,44 @@
+<div class="container">
+  <mat-toolbar>
+    <h2>{{ user ? 'Edit' : 'New' }}</h2>
+  </mat-toolbar>
+  
+  <mat-card appearance="outlined">
+    <form class="example-form" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      
+      <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="username">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+      </mat-form-field>
+      <div class="example-flex-container ">
+        <button [disabled]="userForm.invalid" mat-flat-button type="submit" color="primary">Save</button>
+        <span class="example-spacer"></span>
+        <button mat-flat-button type="button" (click)="back()">Cancel</button>
+      </div>
+      <!-- <mat-grid-list cols="4" rowHeight="70px">
+        <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
+
+        </mat-grid-tile>
+      </mat-grid-list>
+      <mat-grid-list cols="4" rowHeight="100px">
+        <mat-grid-tile
+        *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [style.background]="tile.color">
+          </mat-grid-tile>
+        
+      </mat-grid-list> -->
+    </form>
+  </mat-card>
+</div>  

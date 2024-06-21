@@ -1,0 +1,34 @@
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajusta la altura para centrar verticalmente */
+    padding: 20px;
+    color: black;
+    z-index: 222222131231312312;
+  }
+  
+  mat-card {
+    width: 100%; /* Ajusta según la necesidad, o usa max-width para anchuras mayores */
+    max-width: 600px; /* Establece un ancho máximo para dispositivos grandes */
+    text-align: center; /* Centra el texto en la tarjeta */
+  }
+
+
+  // .div-container {
+//     max-width: 600px;
+//     margin: 20px auto;
+//     padding: 20px;
+//     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+//     display: flex;
+//     justify-content: center;
+//     flex-flow: column;
+//     align-items: center;
+
+//     .div-appHighlight{
+//         padding: 20px;
+//     }
+// }
+
+
+  
