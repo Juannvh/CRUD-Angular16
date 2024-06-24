@@ -1,3 +1,24 @@
+# Proyecto CRUD Angular 
+
+Este proyecto es una aplicación Angular que utiliza Firebase como backend para manejar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre usuarios.
+
+## Pre-requisitos
+
+Instalaciones
+- [Node.js](https://nodejs.org/): El entorno de ejecución para JavaScript.
+- [Angular CLI](https://angular.io/cli): La interfaz de línea de comandos para Angular.
+- [Firebase Account](https://firebase.google.com/): Una cuenta de Firebase para configurar la base de datos y autenticación.
+
+## Configuración del proyecto
+
+### Clonar el repositorio
+
+Para obtener el proyecto, clona este repositorio en tu máquina local usando:
+
+```bash
+git clone https://github.com/Juannvh/CRUD-Angular16
+
+cd CRUD-Angular16
 # CrudAngular16
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.

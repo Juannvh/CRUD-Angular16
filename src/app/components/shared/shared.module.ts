@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HighlightDirective } from '../../highlight.directive';
 
 //Modulos
+
+
 
 //Angular Material
 import {MatInputModule} from '@angular/material/input';
@@ -20,9 +23,11 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
-  declarations: [],
   imports: [
     CommonModule
+  ],
+  declarations: [
+    HighlightDirective
   ],
   exports: [
     MatInputModule,
@@ -38,7 +43,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatSlideToggleModule,
     MatTableModule,
     MatTooltipModule,
-    MatGridListModule
+    MatGridListModule,
+    HighlightDirective
+    
   ]
 })
 export class SharedModule { }

@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-import { ModuloCompartido } from './shared/compartido.module';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { FilterPipe } from './filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserFormComponent } from './components/user-form/user-form.component';
 
-
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { SharedModule } from './components/shared/shared.module';
+
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { environment } from '../environments/environment';
+
+
+
 
 @NgModule({
   declarations: [
@@ -25,18 +29,20 @@ import { SharedModule } from './components/shared/shared.module';
     FooterComponent,
     UserListComponent,
     FilterPipe,
-    UserFormComponent,
-    SidenavComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ModuloCompartido,
     FormsModule,
     NoopAnimationsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
