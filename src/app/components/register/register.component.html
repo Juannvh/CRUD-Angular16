@@ -1,0 +1,27 @@
+
+
+
+    <div class="form-container">
+    <h2>Registro de usuario</h2>
+
+    <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+        <mat-form-field class="example-full-width">
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput formControlName="email">
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width">
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" formControlName="password">
+        </mat-form-field>
+       
+        <div class="example-flex-container ">
+            <button [disabled]="formReg.invalid" mat-flat-button type="submit" color="primary">Registrar</button>
+            <span class="example-spacer"></span>
+            <button mat-flat-button type="button" routerLink="/login">cancelar</button>
+          </div> 
+          <div *ngIf="errorMessage" class="error-message">
+            {{ errorMessage }}
+          </div>
+    </form>
+</div>
