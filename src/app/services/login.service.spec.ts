@@ -18,8 +18,8 @@ describe('LoginService', () => {
     TestBed.configureTestingModule({
       providers: [
         LoginService,
-        { provide: AngularFireAuth, useValue: AngularFireAuthMock }, // Proveer el mock en lugar del servicio real
-        { provide: FirebaseOptionsToken, useValue: {} } // Proveer un valor vacío o simulado
+        { provide: AngularFireAuth, useValue: AngularFireAuthMock }, 
+        { provide: FirebaseOptionsToken, useValue: {} }
       ]
     });
 
