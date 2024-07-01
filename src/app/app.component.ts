@@ -12,14 +12,6 @@ export class AppComponent {
 
   constructor(private auth: AngularFireAuth) {}
 
-  ngOnInit() {
-    this.auth.user.subscribe(user => {
-      this.isAuthenticated = !!user;
-      console.log(this.isAuthenticated);
-      console.log("13");
-    })
-    
-  }
 
   title = 'crudAngular16';
 }

@@ -20,6 +20,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 
 
@@ -33,7 +34,8 @@ import { RegisterComponent } from './components/register/register.component';
     FilterPipe,
     UserFormComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    LayoutComponent
    
   ],
   imports: [
